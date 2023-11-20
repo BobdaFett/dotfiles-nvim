@@ -41,6 +41,7 @@ return {
                     theme = "catppuccin",
                     component_separators = '|',
                     section_separators = { left = '', right = '', },
+                    disabled_filetypes = { "Mason", "Lazy", "NvimTree" },
                 },
                 sections = {
                     lualine_a = {
@@ -63,7 +64,7 @@ return {
                     lualine_z = { 'location' },
                 },
                 tabline = {},
-                extensions = {}
+                extensions = {},
             })
         end,
     },
