@@ -18,6 +18,7 @@ return {
             { "hrsh7th/cmp-cmdline" },
             { "hrsh7th/cmp-nvim-lua" },
             { "onsails/lspkind.nvim" },
+            { "hrsh7th/cmp-nvim-lsp" },
         },
         config = function()
             local cmp = require("cmp")
@@ -26,7 +27,7 @@ return {
 
             require("luasnip.loaders.from_vscode").lazy_load()
             vim.opt.completeopt = "menu,menuone,noselect"
-            
+
             cmp.setup({
                 snippet = {
                     expand = function(args)
@@ -43,6 +44,7 @@ return {
                     ["<CR>"] = cmp.mapping.confirm({ select = false }),
                 }),
                 sources = cmp.config.sources({
+                    { name = "nvim_lsp" },  -- lsp
                     { name = "luasnip" },  -- snippets plugins
                     { name = "buffer" },  -- text within the current buffer
                     { name = "path" },  -- fs paths
@@ -52,6 +54,7 @@ return {
                     format = lspkind.cmp_format({
                         mode = "symbol",
                         maxwidth = 50,
+                        ellipsis_char = "..."
                     }),
                 },
             })
