@@ -12,6 +12,7 @@ keymap.set("n", "<leader>+", "<C-a>")  -- Increment numbers
 keymap.set("n", "<leader>-", "<C-x>")  -- Decrement numbers
 
 -- Window split keys.
+keymap.set("n", "<leader>ww", "<C-w>w")  -- Switch selected window
 keymap.set("n", "<leader>wv", "<C-w>v")  -- Split window vertically  
 keymap.set("n", "<leader>wh", "<C-w>h")  -- Split window horizontally
 keymap.set("n", "<leader>we", "<C-w>=")  -- Make the windows equal length/height
