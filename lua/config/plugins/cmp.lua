@@ -19,6 +19,7 @@ return {
             { "hrsh7th/cmp-nvim-lua" },
             { "onsails/lspkind.nvim" },
             { "hrsh7th/cmp-nvim-lsp" },
+            { "micangl/cmp-vimtex" },
         },
         config = function()
             local cmp = require("cmp")
@@ -57,6 +58,15 @@ return {
                         ellipsis_char = "..."
                     }),
                 },
+            })
+
+            cmp.setup.filetype("tex", {
+                sources = {
+                    { name = "buffer" },
+                    { name = "vimtex" },
+                    { name = "luasnip" },
+                    { name = "path" },
+                }
             })
         end
     },
