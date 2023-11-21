@@ -6,6 +6,7 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>")  -- In INSERT mode, jk will exit insert back into NORMAL mode.
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clears search highlights.
 keymap.set("n", "x", '"_x')  -- delete character, but do not copy into register.
+keymap.set("n", "W", "b")  -- move to the beginning of the word, this is the same as b
 
 -- Increment and decrement numbers.
 keymap.set("n", "<leader>+", "<C-a>")  -- Increment numbers
