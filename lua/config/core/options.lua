@@ -4,13 +4,14 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.number = true
 
--- tabs and indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
+-- tabs and autoindentation
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
+opt.smartindent = true
 
--- line wrapping
+-- disable line wrapping
 opt.wrap = false
 
 -- search settings
@@ -28,11 +29,15 @@ opt.signcolumn = "yes"
 -- backspace
 opt.backspace = "indent,eol,start"
 
--- clipboard settings
-opt.clipboard:append("unnamedplus")  -- forces nvim to use the system clipboard when yanking into buffers.
+-- force nvim to use the system clipboard
+opt.clipboard = "unnamedplus"
 
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
 
-opt.iskeyword:append("-")  -- considers the dash as a part of words.
+-- more space for command messages
+opt.cmdheight = 1
+
+-- considers the "-" as part of words when using the w motion
+opt.iskeyword:append("-")
