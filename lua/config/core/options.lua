@@ -41,3 +41,6 @@ opt.cmdheight = 1
 
 -- considers the "-" as part of words when using the w motion
 opt.iskeyword:append("-")
+
+-- set scrolloff to 8 lines.
+opt.scrolloff = 8
