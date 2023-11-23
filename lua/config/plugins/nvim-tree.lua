@@ -1,7 +1,7 @@
 return {
 	"nvim-tree/nvim-tree.lua",
 	dependencies = {
-		"nvim-tree/nvim-web-devicons"
+		"nvim-tree/nvim-web-devicons",
 	},
 	config = function()
 		local nvimtree = require("nvim-tree")
@@ -16,20 +16,19 @@ return {
 				width = 50,
 			},
 			renderer = {
-                indent_markers = {
-                    enable = true,
-                },
+				indent_markers = {
+					enable = true,
+				},
 			},
-			filters = {
-			},
+			filters = {},
 		})
 
 		-- Configure keybinds.
 		local keymap = vim.keymap
 
-		keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>")  -- Toggle the file explorer.
-		keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFile<CR>")  -- Toggle file finder.
-		keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>")  -- Collapses the file explorer.
-		keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>")  -- Refreshes the file explorer.
+		keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>") -- Toggle the file explorer.
+		keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFile<CR>") -- Toggle file finder.
+		keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>") -- Collapses the file explorer.
+		keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>") -- Refreshes the file explorer.
 	end,
 }

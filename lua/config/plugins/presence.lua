@@ -1,8 +1,8 @@
 return {
-  {
-    "andweeb/presence.nvim",
-    opts = {
-      buttons = false,
-    },
-  }
+	{
+		"andweeb/presence.nvim",
+		opts = {
+			buttons = false,
+		},
+	},
 }

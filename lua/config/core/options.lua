@@ -44,3 +44,6 @@ opt.iskeyword:append("-")
 
 -- set scrolloff to 8 lines.
 opt.scrolloff = 8
+
+-- set colorcolumn to 80 characters.
+opt.colorcolumn = "80"

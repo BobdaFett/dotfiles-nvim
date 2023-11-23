@@ -1,6 +1,6 @@
 return {
-    {
-        "marioortizmanero/adoc-pdf-live.nvim",
-        opts = {},
-    }
+	{
+		"marioortizmanero/adoc-pdf-live.nvim",
+		opts = {},
+	},
 }
