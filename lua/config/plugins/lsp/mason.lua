@@ -45,6 +45,8 @@ return {
 		},
 		config = function()
 			-- enable mason and null-ls integration
+			-- we're using mason-null-ls as the main source of truth,
+			-- as null-ls has been deprecated.
 			local mason_null_ls = require("mason-null-ls")
 			mason_null_ls.setup({
 				ensure_installed = {
