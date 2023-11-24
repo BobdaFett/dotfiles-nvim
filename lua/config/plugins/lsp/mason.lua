@@ -31,6 +31,7 @@ return {
 					"csharp_ls",
 					"html",
 					"lua_ls",
+					"lemminx",
 				},
 				automatic_installation = true,
 			})
