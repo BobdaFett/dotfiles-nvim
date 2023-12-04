@@ -35,11 +35,11 @@ keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>") -- Collapses the file
 keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>") -- Refreshes the file explorer.
 
 -- telescope
---local telescope = require("telescope.builtin")
---keymap.set("n", "<leader>ff", telescope.find_files, {})
---keymap.set("n", "<leader>fg", telescope.live_grep, {})
---keymap.set("n", "<leader>fb", telescope.buffers, {})
---keymap.set("n", "<leader>fh", telescope.helptags, {})
+-- local telescope = require("telescope.builtin")
+-- keymap.set("n", "<leader>ff", telescope.find_files, {})
+-- keymap.set("n", "<leader>fg", telescope.live_grep, {})
+-- keymap.set("n", "<leader>fb", telescope.buffers, {})
+-- keymap.set("n", "<leader>fh", telescope.helptags, {})
 
 -- noice
 keymap.set("n", "<leader>nn", "<cmd>Noice<CR>") -- Open noice command history
