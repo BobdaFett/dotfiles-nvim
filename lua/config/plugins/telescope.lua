@@ -1,11 +1,10 @@
 return {
 
 	-- This is currently broken. For some reason cmake could not find my C compiler (which I definitely have installed)
-	--[[ {   
-        "nvim-telescope/telescope-fzf-native.nvim",
-        build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
-    }, ]]
-
+  -- {
+  --     "nvim-telescope/telescope-fzf-native.nvim",
+  --     build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+  -- },
 	{
 		"nvim-telescope/telescope-fzy-native.nvim",
 	},

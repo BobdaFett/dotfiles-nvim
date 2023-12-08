@@ -6,7 +6,7 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>") -- In INSERT mode, jk will exit insert back into NORMAL mode.
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clears search highlights.
 keymap.set("n", "x", '"_x') -- delete character, but do not copy into register.
-keymap.set("n", "W", "b") -- move to the beginning of the word, this is the same as b
+keymap.set("n", "W", "b") -- move to the beginning of the previous word
 
 -- Increment and decrement numbers.
 keymap.set("n", "<leader>+", "<C-a>") -- Increment numbers
@@ -49,5 +49,5 @@ keymap.set("n", "<leader>ns", "<cmd>Noice stats<CR>") -- Show debugging stats
 keymap.set("n", "<leader>nd", "<cmd>Noice dismiss<CR>") -- Dismiss all on-screen messages
 
 -- trouble plugin
-keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<CR>") -- Toggle the trouble window
-keymap.set("n", "<leader>xr", "<cmd>TroubleRefresh<CR>") -- Manually refresh the trouble list
+keymap.set("n", "<leader>tt", "<cmd>TroubleToggle<CR>") -- Toggle the trouble window
+keymap.set("n", "<leader>tr", "<cmd>TroubleRefresh<CR>") -- Manually refresh the trouble list
