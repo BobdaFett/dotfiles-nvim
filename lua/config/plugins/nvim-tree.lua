@@ -20,7 +20,14 @@ return {
 					enable = true,
 				},
 			},
-			filters = {},
+			filters = {
+        enable = true,
+        dotfiles = false,
+        git_ignored = false,
+      },
+      git = {
+        enable = true,
+      }
 		})
 
 		-- Configure keybinds.
