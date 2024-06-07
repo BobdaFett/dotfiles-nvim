@@ -51,3 +51,4 @@ keymap.set("n", "<leader>nd", "<cmd>Noice dismiss<CR>") -- Dismiss all on-screen
 -- trouble plugin
 keymap.set("n", "<leader>tt", "<cmd>TroubleToggle<CR>") -- Toggle the trouble window
 keymap.set("n", "<leader>tr", "<cmd>TroubleRefresh<CR>") -- Manually refresh the trouble list
+

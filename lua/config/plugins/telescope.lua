@@ -53,10 +53,12 @@ return {
 			-- Supposedly this is due to lazy loading, but I've disabled that.
 			local keys = vim.keymap
 			local builtin = require("telescope.builtin")
-			keys.set("n", "<leader>ff", builtin.find_files, {})
-			keys.set("n", "<leader>fg", builtin.live_grep, {})
-			keys.set("n", "<leader>fb", builtin.buffers, {})
-			keys.set("n", "<leader>fh", builtin.help_tags, {})
+			keys.set("n", "<leader>ff", builtin.git_files, {})
+			keys.set("n", "<leader>fg", builtin.find_files, {}) -- think "no git"
+      keys.set("n", "<leader>ft", builtin.treesitter, {}) 
+      keys.set("n", "<leader>fh", builtin.commands, {})
+      keys.set("n", "<leader>fk", builtin.keymaps, {})
+      keys.set("n", "<leader>fcc", builtin.command_history, {})
 		end,
 	},
 }
