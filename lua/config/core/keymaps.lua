@@ -49,6 +49,6 @@ keymap.set("n", "<leader>ns", "<cmd>Noice stats<CR>") -- Show debugging stats
 keymap.set("n", "<leader>nd", "<cmd>Noice dismiss<CR>") -- Dismiss all on-screen messages
 
 -- trouble plugin
-keymap.set("n", "<leader>tt", "<cmd>TroubleToggle<CR>") -- Toggle the trouble window
-keymap.set("n", "<leader>tr", "<cmd>TroubleRefresh<CR>") -- Manually refresh the trouble list
+keymap.set("n", "<leader>tt", "<cmd>Trouble diagnostics toggle<CR>") -- Toggle the trouble window
+keymap.set("n", "<leader>tr", "<cmd>Trouble diagnostics refresh<CR>") -- Manually refresh the trouble list
 
